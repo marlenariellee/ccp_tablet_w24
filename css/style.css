@@ -1,0 +1,136 @@
+a.active {
+    color: #a30015;
+}
+
+a.skip {
+    position: absolute;
+    left: -1000px;
+    background-color: white;
+    height: 25px;
+    z-index: 100;
+}
+
+a.skip:focus {
+    left: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+html {
+    background-color: #EBCFB2;
+}
+
+header {
+    background-color:#C5BAAF;
+    padding: 20px;
+    text-align: center;
+    box-sizing:border-box;
+}
+
+nav ul li{
+  background-color: #FFFFFF;
+  display: inline;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+}
+
+footer {
+    background-color:#C5BAAF;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction:column;
+}
+
+.content, .sidebar, .gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img {
+    width: 300px;
+    margin: 20px;
+}
+
+.gallery video {
+    width: 200px;
+    margin: 20px;
+}
+
+.gallery figure {
+    width: 200px;
+    margin: 20px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+h1{
+    font-size: 50 px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+h2{
+    font-size: xx-large;
+    font-family: 'segoe ui', tahoma, geneva, verdana, sans-serif;
+    color: #d6a781;
+    text-align: center;
+}
+
+h3{
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #bb9270;
+    text-align: center;
+}
+
+p{
+    background-color: #FFFFFF;
+    padding: 20px;
+    border: solid 2px #E1CE7A;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .content {
+        flex: 2;
+    }
+
+    .sidebar {
+        flex: 1;
+    }
+
+    .gallery {
+        flex-basis: 100%;
+    }
+
+    .gallery img, .gallery video {
+        max-width: 200px;
+    }
+}
